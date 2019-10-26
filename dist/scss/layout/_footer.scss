@@ -1,0 +1,80 @@
+.footer {
+    background-color: #1b1b1b;
+    padding: 98px 0 110px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        @include respond(big-desctop){
+            justify-content: space-evenly;
+        }
+
+        @include respond (tab-port) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        font-family: $font_Montserrat;
+        font-size: 36px;
+        font-weight: 700;
+        margin-left: 15px;
+
+        @include respond (tab-port) {
+            margin-left: 0;
+            margin-bottom: 25px;
+        }
+
+        a{
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    &__menu {
+
+        @include respond(big-desctop){
+           display: none;
+        }
+        width: 100%;
+        max-width: 535px;
+
+        .main-nav__link {
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 400;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        margin-right: 15px;
+
+        @include respond (tab-port) {
+            margin-right: 0;
+        }
+
+        a {
+            display: block;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 20px;
+            line-height: 36px;
+            text-align: center;
+            background: #fff;
+            color: #1b1b1b;
+
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

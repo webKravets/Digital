@@ -1,0 +1,68 @@
+.feature {
+    padding: 80px 0 105px;
+}
+
+.features {
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: space-between;
+
+    @include respond (tab-port) {
+        flex-wrap: wrap;
+    }
+
+    @include respond (phone) {
+        justify-content: center;
+    }
+
+    &__item {
+        max-width: 330px;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+
+        @include respond (tab-port) {
+            margin-right: 0px;
+        }
+    }
+
+        @include respond (tab-port) {
+            flex-basis: 47%;
+        }
+
+        @include respond (phone) {
+            flex-basis: 100%;
+        }
+
+        &:nth-last-child(1) {
+            @include respond (tab-port) {
+                margin-top: 25px;
+            }
+        }
+
+        &:nth-last-child(2) {
+            @include respond (tab-port) {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    
+    &__img {
+        display: block;
+        margin: 0 auto 37px;
+
+        @include respond (tab-port) {
+            margin-top: 20px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        color: #4f4f4f;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.7em;
+    }
+}

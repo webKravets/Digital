@@ -1,0 +1,90 @@
+.about {
+
+    padding: 140px 0 30px;
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 47px;
+        padding: 0 15px;
+
+        @include respond(large-desctop) {
+            max-width: 1360px;
+            margin: 10px 0 0 111px;
+        }
+
+        @include respond(big-desctop) {
+            flex-wrap: wrap;
+            margin: 47px auto 0;
+        }
+    }
+
+    &__content {
+
+        @include respond(large-desctop) {
+            margin-top: 38px;
+        }
+    }
+
+    // &__list {}
+
+    &__item {
+        color: #4f4f4f;
+        font-size: 19px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+
+        @include respond (phone) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+
+        &:nth-child(1) img {
+            margin-top: -30px;
+        }
+
+        &:nth-child(2) img {
+            margin-top: -20px;
+        }
+
+        &:nth-child(3) img {
+            margin-top: -10px;
+        }
+
+
+        &:not(:last-child) {
+            margin-bottom: 28px;
+        }
+
+
+
+
+        p {
+            max-width: 645px;
+            margin-left: -11px;
+            line-height: 1.55em;
+
+            @include respond (phone) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    }
+
+    &__btn {
+        font-size: 20px;
+        font-weight: 400;
+        width: 234px;
+        padding: 16px 0;
+        margin: 51px 0 0 115px;
+
+        @include respond(big-desctop) {
+            margin: 69px auto 0;
+        }
+    }
+
+}

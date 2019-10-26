@@ -1,0 +1,73 @@
+.contact {
+    background: url(../img/contact-bg.png) center bottom no-repeat / cover;
+    padding: 43px 0 58px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 54px;
+
+        @include respond(tab-land) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:nth-child(1) {
+            order: 0;
+            width: auto;
+
+            @include respond(tab-land) {
+                order: 1;
+                margin: 0 auto;
+            }
+
+            @include respond(phone) {
+                margin: 0;
+            }
+        }
+
+        &:nth-child(2) {
+
+            @include respond(phone) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &:nth-child(3) {
+
+            @include respond(phone) {
+                margin-bottom: 25px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__icon {
+        margin-right: 27px;
+
+        @include respond(phone) {
+            margin-right: 20px;
+        }
+    }
+
+    &__text {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 29px;
+        color: #ffffff;
+        margin-top: -10px;
+        max-width: 212px;
+
+        @include respond(big-desctop) {
+            margin-right: -15px;
+        }
+    }
+
+    &__link {
+        color: #ffffff;
+    }
+}

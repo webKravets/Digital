@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    outline: none;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+
+    @include respond(big-desctop) {
+        width: 992px;
+    }
+
+    @include respond(tab-land) {
+        width: 720px;
+    }
+
+    @include respond(tab-port) {
+        width: 540px;
+    }
+
+    @include respond(phone) {
+        width: 400px;
+    }
+
+    @include respond(extra-phone) {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+button,
+button:hover,
+button:focus,
+button:active {
+    outline: none;
+}
+
+div,
+p,
+form,
+input,
+a,
+span,
+button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0.012em;
+}
+
+
+
+ul,
+li {
+    display: block;
+}

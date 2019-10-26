@@ -1,0 +1,92 @@
+.contacts-widget {
+    padding: 10px 0 5px;
+    background: #292929;
+
+    .container {
+        display: flex;
+    }
+
+    @include respond(phone){
+        display: none;
+    }
+}
+
+.socials {
+    display: flex;
+    margin-right: auto;
+    margin-left: 15px;
+
+    &__item {
+        line-height: 36px;
+        display: block;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #fff;
+        margin-right: 9px;
+        transition: all .5s ease;
+
+        &_facebook {
+            background: #3b5998;
+        }
+
+        &_google {
+            background: #fff;
+            color: #999;
+        }
+
+        &_twitter {
+            background: #55acee;
+        }
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    @include respond(tab-port){
+       margin-left: 0;
+    }
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+    &__link {
+
+        &,
+        &:link,
+        &:visited {
+            color: $color-white;
+            font-size: 17px;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: $font_Proxima;
+        }
+
+        &:not(:last-child){
+            margin-right: 45px;
+
+            @include respond(tab-port){
+                margin-right: 15px;
+            }
+        }
+
+        &:hover span{
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    &__icon {
+        font-size: 15px;
+        margin-right: 8px;
+    }
+
+    @include respond(tab-port){
+        margin-right: 0;
+    }
+}

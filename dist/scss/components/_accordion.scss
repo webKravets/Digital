@@ -1,0 +1,74 @@
+.accordion {
+    width: 100%;
+    max-width: 779px;
+
+    @include respond (phone) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__title {
+        color: #4f4f4f;
+        font-size: 30px;
+        font-weight: 700;
+        display: block;
+        padding: 15px 0 15px;
+        cursor: pointer;
+        position: relative;
+
+        @include respond (tab-port) {
+            font-size: 21px;
+            padding: 15px 20px 15px 0;
+        }
+
+
+        &:not(:first-child) {
+            border-top: 1px solid #d1d1d1;
+        }
+
+        span {
+            max-width: 644px;
+            display: inline-block;
+        }
+    }
+
+
+    &__text {
+        color: #4f4f4f;
+        font-size: 19px;
+        font-weight: 700;
+        padding-bottom: 15px;
+
+        @include respond (tab-port) {
+            font-size: 15px;
+        }
+    }
+}
+
+.ui-state-active {
+    color: #0d3693;
+}
+
+
+
+.ui-icon.iconOpen {
+    background: url(../img/ACRarw2.svg) no-repeat -5px;
+    background-size: 30px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+.ui-icon.iconClosed {
+    background: url(../img/ACRarw1.svg) no-repeat -5px;
+    background-size: 30px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}

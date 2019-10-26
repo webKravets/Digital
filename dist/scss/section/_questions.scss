@@ -1,0 +1,15 @@
+.questions{
+    padding: 142px 0 83px;
+    background: url(../img/faq-bg.png) bottom right no-repeat;
+
+   
+
+    .container{
+        padding-left: 115px;
+
+        
+        @include respond (tab-port) {
+            padding-left: 0;
+        }
+    }
+}

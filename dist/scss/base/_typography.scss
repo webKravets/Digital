@@ -1,0 +1,377 @@
+body {
+	font-family: $font_SourceS;
+	font-weight: 700;
+
+}
+
+.heading-primary {
+	color: #f8fcff;
+	font-family: $font_Montserrat;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 1em;
+	letter-spacing: 0.012em;
+
+	@include respond (tab-port) {
+		font-size: 72px;
+	}
+}
+
+.heading-secondary {
+	color: #3c3c3c;
+	font-family: $font_Montserrat;
+	font-size: 50px;
+	font-weight: 400;
+	text-align: center;
+
+	@include respond (tab-port) {
+		font-size: 45px;
+	}
+}
+
+.heading-post span {
+	color: #fa4a33;
+
+	@include respond (tab-port) {
+		display: block;
+	}
+}
+
+.heading-contact {
+	color: $color-white;
+}
+
+.heading-questions {
+	text-align: left;
+
+	@include respond (tab-port) {
+		text-align: center;
+	}
+}
+
+//urls
+$url_0: url(../fonts/../fonts/ProximaNova-Semibold.eot);
+$url_1: url(../fonts/../fonts/ProximaNova-Semibold.eot?#iefix);
+$url_2: url(../fonts/../fonts/ProximaNova-Semibold.woff2);
+$url_3: url(../fonts/ProximaNova-Semibold.woff);
+$url_4: url(../fonts/ProximaNova-Semibold.ttf);
+$url_5: url(../fonts/MontserratAlternates-ExtraBold.eot);
+$url_6: url(../fonts/MontserratAlternates-ExtraBold.eot?#iefix);
+$url_7: url(../fonts/MontserratAlternates-ExtraBold.woff2);
+$url_8: url(../fonts/MontserratAlternates-ExtraBold.woff);
+$url_9: url(../fonts/MontserratAlternates-ExtraBold.ttf);
+$url_10: url(../fonts/SourceSansPro-BlackIt.eot);
+$url_11: url(../fonts/SourceSansPro-BlackIt.eot?#iefix);
+$url_12: url(../fonts/SourceSansPro-BlackIt.woff2);
+$url_13: url(../fonts/SourceSansPro-BlackIt.woff);
+$url_14: url(../fonts/SourceSansPro-BlackIt.ttf);
+$url_15: url(../fonts/SourceSansPro-Light.eot);
+$url_16: url(../fonts/SourceSansPro-Light.eot?#iefix);
+$url_17: url(../fonts/SourceSansPro-Light.woff2);
+$url_18: url(../fonts/SourceSansPro-Light.woff);
+$url_19: url(../fonts/SourceSansPro-Light.ttf);
+$url_20: url(../fonts/Montserrat-Black.eot);
+$url_21: url(../fonts/Montserrat-Black.eot?#iefix);
+$url_22: url(../fonts/Montserrat-Black.woff2);
+$url_23: url(../fonts/Montserrat-Black.woff);
+$url_24: url(../fonts/Montserrat-Black.ttf);
+$url_25: url(../fonts/MontserratAlternates-BoldItalic.eot);
+$url_26: url(../fonts/MontserratAlternates-BoldItalic.eot?#iefix);
+$url_27: url(../fonts/MontserratAlternates-BoldItalic.woff2);
+$url_28: url(../fonts/MontserratAlternates-BoldItalic.woff);
+$url_29: url(../fonts/MontserratAlternates-BoldItalic.ttf);
+$url_30: url(../fonts/SourceSansPro-SemiboldIt.eot);
+$url_31: url(../fonts/SourceSansPro-SemiboldIt.eot?#iefix);
+$url_32: url(../fonts/SourceSansPro-SemiboldIt.woff2);
+$url_33: url(../fonts/SourceSansPro-SemiboldIt.woff);
+$url_34: url(../fonts/SourceSansPro-SemiboldIt.ttf);
+$url_35: url(../fonts/Montserrat-BoldItalic.eot);
+$url_36: url(../fonts/Montserrat-BoldItalic.eot?#iefix);
+$url_37: url(../fonts/Montserrat-BoldItalic.woff2);
+$url_38: url(../fonts/Montserrat-BoldItalic.woff);
+$url_39: url(../fonts/Montserrat-BoldItalic.ttf);
+$url_40: url(../fonts/SourceSansPro-ExtraLight.eot);
+$url_41: url(../fonts/SourceSansPro-ExtraLight.eot?#iefix);
+$url_42: url(../fonts/SourceSansPro-ExtraLight.woff2);
+$url_43: url(../fonts/SourceSansPro-ExtraLight.woff);
+$url_44: url(../fonts/SourceSansPro-ExtraLight.ttf);
+$url_45: url(../fonts/Montserrat-Bold.eot);
+$url_46: url(../fonts/Montserrat-Bold.eot?#iefix);
+$url_47: url(../fonts/Montserrat-Bold.woff2);
+$url_48: url(../fonts/Montserrat-Bold.woff);
+$url_49: url(../fonts/Montserrat-Bold.ttf);
+$url_50: url(../fonts/SourceSansPro-Regular.eot);
+$url_51: url(../fonts/SourceSansPro-Regular.eot?#iefix);
+$url_52: url(../fonts/SourceSansPro-Regular.woff2);
+$url_53: url(../fonts/SourceSansPro-Regular.woff);
+$url_54: url(../fonts/SourceSansPro-Regular.ttf);
+$url_55: url(../fonts/Montserrat-ExtraBold.eot);
+$url_56: url(../fonts/Montserrat-ExtraBold.eot?#iefix);
+$url_57: url(../fonts/Montserrat-ExtraBold.woff2);
+$url_58: url(../fonts/Montserrat-ExtraBold.woff);
+$url_59: url(../fonts/Montserrat-ExtraBold.ttf);
+$url_60: url(../fonts/SourceSansPro-LightIt.eot);
+$url_61: url(../fonts/SourceSansPro-LightIt.eot?#iefix);
+$url_62: url(../fonts/SourceSansPro-LightIt.woff2);
+$url_63: url(../fonts/SourceSansPro-LightIt.woff);
+$url_64: url(../fonts/SourceSansPro-LightIt.ttf);
+$url_65: url(../fonts/SourceSansPro-BoldIt.eot);
+$url_66: url(../fonts/SourceSansPro-BoldIt.eot?#iefix);
+$url_67: url(../fonts/SourceSansPro-BoldIt.woff2);
+$url_68: url(../fonts/SourceSansPro-BoldIt.woff);
+$url_69: url(../fonts/SourceSansPro-BoldIt.ttf);
+$url_70: url(../fonts/Montserrat-ExtraBoldItalic.eot);
+$url_71: url(../fonts/Montserrat-ExtraBoldItalic.eot?#iefix);
+$url_72: url(../fonts/Montserrat-ExtraBoldItalic.woff2);
+$url_73: url(../fonts/Montserrat-ExtraBoldItalic.woff);
+$url_74: url(../fonts/Montserrat-ExtraBoldItalic.ttf);
+$url_75: url(../fonts/MontserratAlternates-Black.eot);
+$url_76: url(../fonts/MontserratAlternates-Black.eot?#iefix);
+$url_77: url(../fonts/MontserratAlternates-Black.woff2);
+$url_78: url(../fonts/MontserratAlternates-Black.woff);
+$url_79: url(../fonts/MontserratAlternates-Black.ttf);
+$url_80: url(../fonts/SourceSansPro-Bold.eot);
+$url_81: url(../fonts/SourceSansPro-Bold.eot?#iefix);
+$url_82: url(../fonts/SourceSansPro-Bold.woff2);
+$url_83: url(../fonts/SourceSansPro-Bold.woff);
+$url_84: url(../fonts/SourceSansPro-Bold.ttf);
+$url_85: url(../fonts/SourceSansPro-ExtraLightIt.eot);
+$url_86: url(../fonts/SourceSansPro-ExtraLightIt.eot?#iefix);
+$url_87: url(../fonts/SourceSansPro-ExtraLightIt.woff2);
+$url_88: url(../fonts/SourceSansPro-ExtraLightIt.woff);
+$url_89: url(../fonts/SourceSansPro-ExtraLightIt.ttf);
+$url_90: url(../fonts/Montserrat-BlackItalic.eot);
+$url_91: url(../fonts/Montserrat-BlackItalic.eot?#iefix);
+$url_92: url(../fonts/Montserrat-BlackItalic.woff2);
+$url_93: url(../fonts/Montserrat-BlackItalic.woff);
+$url_94: url(../fonts/Montserrat-BlackItalic.ttf);
+$url_95: url(../fonts/MontserratAlternates-Bold.eot);
+$url_96: url(../fonts/MontserratAlternates-Bold.eot?#iefix);
+$url_97: url(../fonts/MontserratAlternates-Bold.woff2);
+$url_98: url(../fonts/MontserratAlternates-Bold.woff);
+$url_99: url(../fonts/MontserratAlternates-Bold.ttf);
+$url_100: url(../fonts/SourceSansPro-Black.eot);
+$url_101: url(../fonts/SourceSansPro-Black.eot?#iefix);
+$url_102: url(../fonts/SourceSansPro-Black.woff2);
+$url_103: url(../fonts/SourceSansPro-Black.woff);
+$url_104: url(../fonts/SourceSansPro-Black.ttf);
+$url_105: url(../fonts/SourceSansPro-Semibold.eot);
+$url_106: url(../fonts/SourceSansPro-Semibold.eot?#iefix);
+$url_107: url(../fonts/SourceSansPro-Semibold.woff2);
+$url_108: url(../fonts/SourceSansPro-Semibold.woff);
+$url_109: url(../fonts/SourceSansPro-Semibold.ttf);
+$url_110: url(../fonts/MontserratAlternates-BlackItalic.eot);
+$url_111: url(../fonts/MontserratAlternates-BlackItalic.eot?#iefix);
+$url_112: url(../fonts/MontserratAlternates-BlackItalic.woff2);
+$url_113: url(../fonts/MontserratAlternates-BlackItalic.woff);
+$url_114: url(../fonts/MontserratAlternates-BlackItalic.ttf);
+$url_115: url(../fonts/SourceSansPro-It.eot);
+$url_116: url(../fonts/SourceSansPro-It.eot?#iefix);
+$url_117: url(../fonts/SourceSansPro-It.woff2);
+$url_118: url(../fonts/SourceSansPro-It.woff);
+$url_119: url(../fonts/SourceSansPro-It.ttf);
+$url_120: url(../fonts/ProximaNova-Semibold_1.eot);
+$url_121: url(../fonts/ProximaNova-Semibold_1.eot?#iefix);
+$url_122: url(../fonts/ProximaNova-Semibold_1.woff2);
+$url_123: url(../fonts/ProximaNova-Semibold_1.woff);
+$url_124: url(../fonts/ProximaNova-Semibold_1.ttf);
+
+@font-face {
+	font-family: $font_Proxima;
+	src: $url_0;
+	src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'), $url_1 format('embedded-opentype'), $url_2 format('woff2'), $url_3 format('woff'), $url_4 format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_MontserratA;
+	src: $url_5;
+	src: local('Montserrat Alternates ExtraBold'), local('MontserratAlternates-ExtraBold'), $url_6 format('embedded-opentype'), $url_7 format('woff2'), $url_8 format('woff'), $url_9 format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_10;
+	src: local('Source Sans Pro Black Italic'), local('SourceSansPro-BlackIt'), $url_11 format('embedded-opentype'), $url_12 format('woff2'), $url_13 format('woff'), $url_14 format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_15;
+	src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), $url_16 format('embedded-opentype'), $url_17 format('woff2'), $url_18 format('woff'), $url_19 format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_Montserrat;
+	src: $url_20;
+	src: local('Montserrat Black'), local('Montserrat-Black'), $url_21 format('embedded-opentype'), $url_22 format('woff2'), $url_23 format('woff'), $url_24 format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_MontserratA;
+	src: $url_25;
+	src: local('Montserrat Alternates Bold Italic'), local('MontserratAlternates-BoldItalic'), $url_26 format('embedded-opentype'), $url_27 format('woff2'), $url_28 format('woff'), $url_29 format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_30;
+	src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), $url_31 format('embedded-opentype'), $url_32 format('woff2'), $url_33 format('woff'), $url_34 format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_Montserrat;
+	src: $url_35;
+	src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'), $url_36 format('embedded-opentype'), $url_37 format('woff2'), $url_38 format('woff'), $url_39 format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_40;
+	src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), $url_41 format('embedded-opentype'), $url_42 format('woff2'), $url_43 format('woff'), $url_44 format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_Montserrat;
+	src: $url_45;
+	src: local('Montserrat Bold'), local('Montserrat-Bold'), $url_46 format('embedded-opentype'), $url_47 format('woff2'), $url_48 format('woff'), $url_49 format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_50;
+	src: local('Source Sans Pro'), local('SourceSansPro-Regular'), $url_51 format('embedded-opentype'), $url_52 format('woff2'), $url_53 format('woff'), $url_54 format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_Montserrat;
+	src: $url_55;
+	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), $url_56 format('embedded-opentype'), $url_57 format('woff2'), $url_58 format('woff'), $url_59 format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_60;
+	src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), $url_61 format('embedded-opentype'), $url_62 format('woff2'), $url_63 format('woff'), $url_64 format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_65;
+	src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), $url_66 format('embedded-opentype'), $url_67 format('woff2'), $url_68 format('woff'), $url_69 format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_Montserrat;
+	src: $url_70;
+	src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'), $url_71 format('embedded-opentype'), $url_72 format('woff2'), $url_73 format('woff'), $url_74 format('truetype');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_MontserratA;
+	src: $url_75;
+	src: local('Montserrat Alternates Black'), local('MontserratAlternates-Black'), $url_76 format('embedded-opentype'), $url_77 format('woff2'), $url_78 format('woff'), $url_79 format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_80;
+	src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), $url_81 format('embedded-opentype'), $url_82 format('woff2'), $url_83 format('woff'), $url_84 format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_85;
+	src: local('Source Sans Pro ExtraLight Italic'), local('SourceSansPro-ExtraLightIt'), $url_86 format('embedded-opentype'), $url_87 format('woff2'), $url_88 format('woff'), $url_89 format('truetype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_Montserrat;
+	src: $url_90;
+	src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'), $url_91 format('embedded-opentype'), $url_92 format('woff2'), $url_93 format('woff'), $url_94 format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_MontserratA;
+	src: $url_95;
+	src: local('Montserrat Alternates Bold'), local('MontserratAlternates-Bold'), $url_96 format('embedded-opentype'), $url_97 format('woff2'), $url_98 format('woff'), $url_99 format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_100;
+	src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), $url_101 format('embedded-opentype'), $url_102 format('woff2'), $url_103 format('woff'), $url_104 format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_105;
+	src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), $url_106 format('embedded-opentype'), $url_107 format('woff2'), $url_108 format('woff'), $url_109 format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $font_MontserratA;
+	src: $url_110;
+	src: local('Montserrat Alternates Black Italic'), local('MontserratAlternates-BlackItalic'), $url_111 format('embedded-opentype'), $url_112 format('woff2'), $url_113 format('woff'), $url_114 format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_SourceS;
+	src: $url_115;
+	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), $url_116 format('embedded-opentype'), $url_117 format('woff2'), $url_118 format('woff'), $url_119 format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $font_Proxima;
+	src: $url_120;
+	src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'), $url_121 format('embedded-opentype'), $url_122 format('woff2'), $url_123 format('woff'), $url_124 format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
